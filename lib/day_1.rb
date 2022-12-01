@@ -2,6 +2,7 @@ require_relative "./aoc"
 
 class Day1 < AOC
   def solve(part:)
+    #lazy_load_data will bring in the text file as a 1 line string so any new lines will be converted to \n
     data = lazy_load_data
 
     data = data.split("\n\n")
